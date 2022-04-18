@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lzz.exam.dao.ExamManageDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.lzz.exam.entity.ExamManageEntity" id="examManageMap">
+        <result property="id" column="id"/>
+        <result property="description" column="description"/>
+        <result property="source" column="source"/>
+        <result property="paperid" column="paperId"/>
+        <result property="classid" column="classid"/>
+        <result property="examdate" column="examDate"/>
+        <result property="totaltime" column="totalTime"/>
+        <result property="totalscore" column="totalScore"/>
+        <result property="tips" column="tips"/>
+        <result property="status" column="status"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+
+</mapper>
